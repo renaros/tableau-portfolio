@@ -10,7 +10,7 @@ def create_customer_activity_file():
     print("Creating new customer_activity.csv...")
     
     # read from transaction files
-    df_transactions = pd.read_csv('customer_transactions.csv')
+    df_transactions = pd.read_csv('output/customer_transactions.csv')
 
     # create new column for month
     df_transactions["transaction_month"] = pd.to_datetime(df_transactions.transaction_datetime)
@@ -23,7 +23,7 @@ def create_customer_activity_file():
     df_transactions_by_month.rename(columns={0:"num_of_transactions"}, inplace=True)
 
     # gets all months available on the dataset
-    min_month = pd.to_datetime(df_transactions_by_month[["transaction_month"]].min())[0]
+    min_month = df_transactions_by_month["transaction_month"].min()
     max_month = datetime.today()
     df_months = pd.DataFrame(data=pd.date_range(min_month, max_month, freq='MS').strftime("%Y-%m-01").tolist(), columns=["month"])
     df_months['index'] = 1
