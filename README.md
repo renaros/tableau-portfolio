@@ -33,4 +33,4 @@ After changing the file, run the following command to execute the code:
 
 `python3 ./main.py`
 
-This will trigger the process and create all sources file at the output folder.
+This will trigger the process and create all source files inside the output folder.
