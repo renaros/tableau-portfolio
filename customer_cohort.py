@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from datetime import datetime, date, timedelta
+from datetime import datetime, timedelta
 
 
 def days_between_dates(date1, date2):
