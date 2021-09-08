@@ -6,9 +6,9 @@ If you want to check out how the dashboard looks like and interact with it (by u
 
 Also, if you want to send me questions or suggestions, don't hesitate to send me a message on [my LinkedIn](https://www.linkedin.com/in/renatorossi1/?locale=en_US "Click to access Renato Rossi's LinkedIn profile").
 
-![Marketing Dashboard - Customer Journey](Marketing Dashboard - Customer Journey.png "First screen containing customer journey related information")
+![Marketing Dashboard - Customer Journey](https://raw.githubusercontent.com/renaros/tableau-portfolio/main/Marketing%20Dashboard%20-%20Customer%20Journey.png "First screen containing customer journey related information")
 
-![Marketing Dashboard - Customer Activity](Marketing Dashboard - Customer Activity.png "Second dashboard containing customer activity related information")
+![Marketing Dashboard - Customer Activity](https://raw.githubusercontent.com/renaros/tableau-portfolio/main/Marketing%20Dashboard%20-%20Customer%20Activity.png "Second dashboard containing customer activity related information")
 
 
 ## How to run the project on your own:
