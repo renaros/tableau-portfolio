@@ -7,8 +7,8 @@ import customer_activity
 if __name__ == "__main__":
 
     ## PARAMETERS ##
-    NUM_OF_CUSTOMERS = 10 # Number of customers to create
-    MONTHS_BACK = 6 # Number of months back when customers create account
+    NUM_OF_CUSTOMERS = 22785 # Number of customers to create
+    MONTHS_BACK = 7 # Number of months back when customers create account
 
     # Create 1st file: customer_registration.csv
     customer_registration.create_customer_registration_file(NUM_OF_CUSTOMERS, MONTHS_BACK)

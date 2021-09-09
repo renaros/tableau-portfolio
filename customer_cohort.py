@@ -165,18 +165,18 @@ def get_all_counts_dataframe(df):
 
     # Counts for status from = Account Registration
     df_case1_2 = get_df_client_count(df, "account_registration_dt", "account_email_confirmation_dt", "Account registered", "Email confirmed")
-    df_case1_3 = get_df_client_count(df, "account_registration_dt", "account_email_confirmation_dt", "Account registered", "Client registered")
-    df_case1_4 = get_df_client_count(df, "account_registration_dt", "account_email_confirmation_dt", "Account registered", "Client analyzed (approved or denied)")
-    df_case1_5 = get_df_client_count(df, "account_registration_dt", "account_email_confirmation_dt", "Account registered", "Initial deposit")
+    df_case1_3 = get_df_client_count(df, "account_registration_dt", "client_registration_dt", "Account registered", "Client registered")
+    df_case1_4 = get_df_client_count(df, "account_registration_dt", "client_analysis_dt", "Account registered", "Client analyzed (approved or denied)")
+    df_case1_5 = get_df_client_count(df, "account_registration_dt", "client_initial_deposit_dt", "Account registered", "Initial deposit")
 
     # Counts for status from = Email Confirmation
     df_case2_3 = get_df_client_count(df, "account_email_confirmation_dt", "client_registration_dt", "Email confirmed", "Client registered")
-    df_case2_4 = get_df_client_count(df, "account_email_confirmation_dt", "client_registration_dt", "Email confirmed", "Client analyzed (approved or denied)")
-    df_case2_5 = get_df_client_count(df, "account_email_confirmation_dt", "client_registration_dt", "Email confirmed", "Initial deposit")
+    df_case2_4 = get_df_client_count(df, "account_email_confirmation_dt", "client_analysis_dt", "Email confirmed", "Client analyzed (approved or denied)")
+    df_case2_5 = get_df_client_count(df, "account_email_confirmation_dt", "client_initial_deposit_dt", "Email confirmed", "Initial deposit")
 
     # Counts for status from = Client Registration
     df_case3_4 = get_df_client_count(df, "client_registration_dt", "client_analysis_dt", "Client registered", "Client analyzed (approved or denied)")
-    df_case3_5 = get_df_client_count(df, "client_registration_dt", "client_analysis_dt", "Client registered", "Initial deposit")
+    df_case3_5 = get_df_client_count(df, "client_registration_dt", "client_initial_deposit_dt", "Client registered", "Initial deposit")
 
     # Counts for status from = Client Analysis
     df_case4_5 = get_df_client_count(df, "client_analysis_dt", "client_initial_deposit_dt", "Client analyzed (approved or denied)", "Initial deposit")
